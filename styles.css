@@ -66,7 +66,7 @@ a:hover { text-decoration-color: var(--color-accent); }
 .nav { display: flex; align-items: center; gap: var(--space-xl); min-height: 72px; }
 .wordmark { font-weight: 700; font-size: var(--text-xl); letter-spacing: var(--tracking-display); text-decoration: none; color: var(--color-ink); }
 .nav-links { list-style: none; margin: 0 0 0 auto; padding: 0; display: flex; gap: var(--space-lg); }
-.nav-links a, .nav-phone { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+.nav-links a, .nav-phone { white-space: nowrap; display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
 .nav-links a:hover, .nav-phone:hover { text-decoration: underline; text-decoration-color: var(--color-accent); }
 .lang { display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--space-sm); text-decoration: underline; text-decoration-color: var(--color-rule); text-underline-offset: 0.25em; }
 .lang-short { display: none; }
@@ -274,6 +274,8 @@ legend { padding: 0; margin-bottom: var(--space-xs); font-weight: 600; color: va
   .hero-grid { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); min-height: 0; }
   .hero h1 { max-width: 18ch; }
   .booker { max-width: 44rem; }
+  .nav-links { display: none; }
+  .lang { margin-left: auto; }
 }
 @media (max-width: 60rem) {
   .nav-links { display: none; }

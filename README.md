@@ -8,7 +8,9 @@ Demo website for Jocsan Cruz Villalobos, physiotherapist in La Fortuna de San Ca
 - `RESEARCH.md`: market research and feature plan
 - `archive/v1-OLD/`: first version, kept for reference
 
-Plain HTML and CSS, no build step. To preview, serve the folder with any static server, for example:
+Live demo (noindex): https://jocsanfisio.karabi-bots.workers.dev (Cloudflare Worker serving static files). Deploy updates with `npm run deploy` (copies the public files to dist/ and runs wrangler).
+
+Plain HTML and CSS. To preview locally, serve the folder with any static server, for example:
 
 ```bash
 npx http-server -p 5178 -c-1

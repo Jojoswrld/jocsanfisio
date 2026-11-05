@@ -1,0 +1,9 @@
+{
+  "name": "jocsanfisio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "deploy": "node scripts/build.mjs && npx wrangler deploy"
+  }
+}
