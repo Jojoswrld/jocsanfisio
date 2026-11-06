@@ -4,6 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "deploy": "node scripts/build.mjs && npx wrangler deploy"
+    "deploy": "node scripts/build.mjs && npx wrangler deploy",
+    "build:v3": "node scripts/build-v3.mjs",
+    "deploy:v3": "node scripts/build-v3.mjs && npx wrangler deploy -c wrangler.v3.jsonc"
   }
 }
