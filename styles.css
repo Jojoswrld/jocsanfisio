@@ -1,8 +1,9 @@
 /* Hallmark · shape: Counter page, booking first, then the services, the first visit, his questions, who he is and the close · genre: editorial · theme: Ink (deal 3/3, seed professional-physiotherapist-clinic-rehabilitation-8d2a·774a4bc1·2026-11-05·r0) · job: book · draw: f56a4e (swapped: Poster hero to Counter, no photographs exist yet; search-led nav to edge-aligned, the site has no search; the room and menu sections to services and patient questions)
- * hero: Counter, head on the left, the booking picker as the visual on the right · nav: edge-aligned, wordmark, four links, the phone number · footer: index columns · imagery: none until Jocsan sends photos · signature: the booking picker that writes the WhatsApp message for you · travelers section: four common tour injuries across, emergency line, ask about hotel visits · languages: Spanish at the root, English at en/, a switch in the nav and footer · ink: paper, recoloured to the brand (navy ink, orange signal)
+ * hero: Counter, head on the left, the booking picker as the visual on the right · nav: edge-aligned, wordmark, four links, the phone number · footer: index columns · imagery: none until Jocsan sends photos · signature: the booking picker that writes the WhatsApp message for you · travelers section: four common tour injuries across, emergency line, ask about hotel visits · motion: one slow domain-warp loop in the about band, with a pause control · languages: Spanish at the root, English at en/, a switch in the nav and footer · ink: paper, recoloured to the brand (navy ink, orange signal)
  * axes: light/grotesk-sans/warm · posture: restrained · brand: JocsanFisio (colours sampled from his Instagram, 2026-11-05) · contrast: pass · fold: pass · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H5 E4 S4 R5 V4 · weakest: S, no photographs yet; the booking picker and his own five questions carry the page instead */
 /* Hallmark · dismissed 58 · four of the five question answers stay closed until tapped, so a visitor sees about 500 words, the extra over 450 being the travelers section Joseph asked for; no 900px window passes 80 words */
+/* Hallmark · waive 29 · a domain-warped noise field fills the navy about band behind the text · Joseph asked for domain warping; it stays low contrast in navy, pauses off screen, has a pause button and holds still under reduced motion */
 /* Hallmark · answered F15 · page columns all part at 96px; the 40px and 24px gaps sit inside the question answers and the fact lists */
 @import url("./tokens.css");
 @import url("./base.css");
@@ -230,7 +231,27 @@ legend { padding: 0; margin-bottom: var(--space-xs); font-weight: 600; color: va
 .q-body dd { margin: 0; color: var(--color-ink-2); max-width: 40ch; }
 
 /* ---------- About (ink band) ---------- */
-.about { background: var(--color-ink); color: var(--color-on-ink-2); padding-block: var(--section-gap-s); }
+.about { position: relative; isolation: isolate; overflow: clip; background: var(--color-ink); color: var(--color-on-ink-2); padding-block: var(--section-gap-s); }
+.warp { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; display: block; }
+.about-grid { position: relative; }
+.warp-toggle {
+  position: absolute;
+  right: var(--gutter);
+  bottom: calc(var(--space-lg) - var(--section-gap-s));
+  min-height: 44px;
+  padding: 0 var(--space-md);
+  border: var(--rule-hair) solid color-mix(in oklch, var(--color-on-ink-2) 45%, transparent);
+  border-radius: 10px;
+  background: var(--color-ink);
+  color: var(--color-on-ink);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color var(--dur-micro) var(--ease-out);
+}
+.warp-toggle:hover { border-color: var(--color-on-ink); }
+.warp-toggle:active { transform: translateY(1px); }
+.warp-toggle:disabled { opacity: 0.55; cursor: not-allowed; }
 .about h2 { color: var(--color-on-ink); font-size: var(--text-section); line-height: 1.05; }
 .about .lead { color: var(--color-on-ink-2); }
 .about a { color: var(--color-on-ink); }
@@ -282,6 +303,7 @@ legend { padding: 0; margin-bottom: var(--space-xs); font-weight: 600; color: va
   .lang { margin-left: auto; }
   .hero-grid, .head-split, .svc-cols, .q-grid, .about-grid, .contact-grid { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
   .hero-grid { min-height: 0; }
+  .warp-toggle { position: static; justify-self: start; }
   .steps { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
   .cases { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cases li { padding: var(--space-lg) var(--space-md); min-height: 0; }

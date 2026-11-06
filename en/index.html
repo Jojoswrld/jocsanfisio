@@ -172,6 +172,7 @@
     </section>
 
     <section class="about" id="about" aria-labelledby="about-h">
+      <canvas class="warp" aria-hidden="true"></canvas>
       <div class="container about-grid">
         <div class="about-who">
           <h2 id="about-h">Jocsan Cruz Villalobos</h2>
@@ -184,6 +185,7 @@
         <blockquote class="about-quote">
           <p>“The best and most effective pharmacy is inside your own body.”</p>
         </blockquote>
+        <button class="warp-toggle" type="button" aria-pressed="false" data-pause="Pause background" data-play="Play background" hidden>Pause background</button>
       </div>
     </section>
 
@@ -240,6 +242,7 @@
     </div>
   </footer>
 
+  <script src="../warp.js" defer></script>
   <script>
     // Booking: builds the WhatsApp message from the two choices. Nothing is sent from this page.
     const form = document.getElementById("booker");
