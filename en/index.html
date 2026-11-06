@@ -29,6 +29,7 @@
 
   <main>
     <section class="hero">
+      <canvas class="warp hero-warp" data-seed="2" aria-hidden="true"></canvas>
       <div class="container hero-grid">
         <div class="hero-copy">
           <h1>Physiotherapy and rehab in La Fortuna</h1>
@@ -63,6 +64,7 @@
           </div>
         </form>
       </div>
+      <button class="warp-toggle hero-toggle" type="button" aria-pressed="false" data-pause="Pause background" data-play="Play background" hidden>Pause background</button>
     </section>
 
     <section class="services" id="services" aria-labelledby="services-h">
@@ -172,7 +174,7 @@
     </section>
 
     <section class="about" id="about" aria-labelledby="about-h">
-      <canvas class="warp" aria-hidden="true"></canvas>
+      <canvas class="warp" data-seed="0" aria-hidden="true"></canvas>
       <div class="container about-grid">
         <div class="about-who">
           <h2 id="about-h">Jocsan Cruz Villalobos</h2>

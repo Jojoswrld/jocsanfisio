@@ -30,6 +30,7 @@
   <main>
     <!-- Hero: Counter posture, the booking is the visual -->
     <section class="hero">
+      <canvas class="warp hero-warp" data-seed="2" aria-hidden="true"></canvas>
       <div class="container hero-grid">
         <div class="hero-copy">
           <h1>Fisioterapia y rehabilitación en La Fortuna</h1>
@@ -64,6 +65,7 @@
           </div>
         </form>
       </div>
+      <button class="warp-toggle hero-toggle" type="button" aria-pressed="false" data-pause="Pausar fondo" data-play="Reanudar fondo" hidden>Pausar fondo</button>
     </section>
 
     <!-- Services: ruled rows -->
@@ -177,7 +179,7 @@
 
     <!-- About: ink band -->
     <section class="about" id="sobre" aria-labelledby="sobre-h">
-      <canvas class="warp" aria-hidden="true"></canvas>
+      <canvas class="warp" data-seed="0" aria-hidden="true"></canvas>
       <div class="container about-grid">
         <div class="about-who">
           <h2 id="sobre-h">Jocsan Cruz Villalobos</h2>
