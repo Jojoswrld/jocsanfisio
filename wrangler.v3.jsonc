@@ -1,5 +1,5 @@
 {
   "name": "jocsanfisio-v3",
   "compatibility_date": "2026-11-04",
-  "assets": { "directory": "./dist-v3" }
+  "assets": { "directory": "./dist" }
 }

@@ -3,264 +3,174 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JocsanFisio, fisioterapia y rehabilitación en La Fortuna de San Carlos</title>
-  <meta name="description" content="Fisioterapia, rehabilitación y entrenamiento con Jocsan Cruz Villalobos en La Fortuna de San Carlos, a domicilio, en tu gimnasio o en línea.">
+  <title>JocsanFisio, fisioterapia en La Fortuna de San Carlos</title>
+  <meta name="description" content="Fisioterapia, rehabilitación y entrenamiento con Jocsan Cruz Villalobos en La Fortuna de San Carlos: a domicilio, en tu gimnasio o en línea.">
   <link rel="alternate" hreflang="es" href="./">
   <link rel="alternate" hreflang="en" href="en/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@600&family=Hanken+Grotesk:wght@400;500&family=Newsreader:opsz,wght@6..72,400&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
+  <a class="banner" href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">Citas por WhatsApp o llamada: 8628-6856</a>
+  <header class="bar">
     <nav class="container nav" aria-label="Principal">
       <a class="wordmark" href="#" aria-label="JocsanFisio, inicio">JocsanFisio</a>
       <ul class="nav-links">
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#primera-cita">Primera cita</a></li>
-        <li><a href="#preguntas">Preguntas</a></li>
-        <li><a href="#sobre">Sobre Jocsan</a></li>
+        <li><a href="#que-atiende">Servicios</a></li>
+        <li><a href="#dudas">Preguntas</a></li>
+        <li><a href="#agendar">Agendar</a></li>
       </ul>
-      <a class="lang" href="en/" hreflang="en" lang="en" aria-label="English"><span class="lang-long">English</span><span class="lang-short" aria-hidden="true">EN</span></a>
-      <a class="nav-phone" href="tel:+50686286856">8628-6856</a>
+      <a class="lang" href="en/" hreflang="en" lang="en">English</a>
     </nav>
   </header>
 
   <main>
-    <!-- Hero: Counter posture, the booking is the visual -->
-    <section class="hero">
-      <canvas class="warp hero-warp" data-seed="2" aria-hidden="true"></canvas>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>Fisioterapia y rehabilitación en La Fortuna</h1>
-          <p class="lead">Atención a domicilio, en tu gimnasio o en línea.</p>
-          <p class="hero-who">Jocsan Cruz Villalobos, fisioterapeuta. Atiende en español e inglés.</p>
-        </div>
-
-        <form class="booker" id="booker" aria-labelledby="booker-h" onsubmit="return false">
-          <h2 class="booker-h" id="booker-h">Pide tu cita</h2>
-
-          <fieldset class="choice">
-            <legend>¿Qué necesitas?</legend>
-            <label class="choice-row"><input type="radio" name="need" value="rehabilitación de una lesión" checked><span>Rehabilitar una lesión</span></label>
-            <label class="choice-row"><input type="radio" name="need" value="dolor de espalda, cuello o articulaciones"><span>Dolor de espalda, cuello o articulaciones</span></label>
-            <label class="choice-row"><input type="radio" name="need" value="una descarga muscular"><span>Descarga muscular</span></label>
-            <label class="choice-row"><input type="radio" name="need" value="entrenamiento personalizado"><span>Entrenamiento personalizado</span></label>
-            <label class="choice-row"><input type="radio" name="need" value="entrenamiento para adulto mayor"><span>Entrenamiento para adulto mayor</span></label>
-          </fieldset>
-
-          <fieldset class="where">
-            <legend>¿Dónde?</legend>
-            <div class="seg">
-              <label><input type="radio" name="where" value="en mi casa" checked><span>Casa</span></label>
-              <label><input type="radio" name="where" value="en el gimnasio"><span>Gimnasio</span></label>
-              <label><input type="radio" name="where" value="en línea"><span>En línea</span></label>
-            </div>
-          </fieldset>
-
-          <div class="booker-go">
-            <a class="btn btn-primary" id="booker-link" href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-            <p class="booker-note">Se abre WhatsApp con tu mensaje listo. O llama al <a href="tel:+50686286856">8628-6856</a>.</p>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Services: ruled rows -->
-    <section class="services" id="servicios" aria-labelledby="servicios-h">
-      <div class="container">
-        <div class="head-split">
-          <h2 id="servicios-h">Del dolor al rendimiento</h2>
-          <p class="lead">Recupera tu movimiento, mejora tu rendimiento y alcanza tus objetivos.</p>
-        </div>
-        <div class="svc-cols">
-          <div>
-            <h3 class="svc-group">Recuperar</h3>
-            <ul class="ruled svc-list">
-              <li><strong>Rehabilitación de lesiones</strong><span>Esguinces, golpes y lesiones deportivas.</span></li>
-              <li><strong>Manejo del dolor</strong><span>Espalda, cuello, rodillas y hombros.</span></li>
-              <li><strong>Descargas musculares</strong><span>Para músculos cargados por el trabajo o el deporte.</span></li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="svc-group">Entrenar</h3>
-            <ul class="ruled svc-list">
-              <li><strong>Entrenamiento personalizado</strong><span>Un plan de ejercicio hecho para ti.</span></li>
-              <li><strong>Adulto mayor</strong><span>Fuerza y equilibrio para moverte con confianza.</span></li>
-              <li><strong>Peso y masa muscular</strong><span>Bajar de peso o ganar fuerza, con buena técnica.</span></li>
-            </ul>
-          </div>
+    <!-- Hero: Poster on navy with the warp field, the first question on the left -->
+    <section class="hero" aria-labelledby="hero-h">
+      <canvas class="warp" data-seed="2" aria-hidden="true"></canvas>
+      <div class="container hero-body">
+        <h1 id="hero-h">¿Buscas fisioterapia en La Fortuna?</h1>
+        <p class="lead">Jocsan Cruz Villalobos te atiende en casa, gimnasio o en línea.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+50686286856">Llamar al 8628-6856</a>
         </div>
       </div>
     </section>
 
-    <!-- First visit: steps as a notice -->
-    <section class="travel" id="turistas" aria-labelledby="turistas-h">
-      <div class="container">
-        <div class="head-split">
-          <h2 id="turistas-h">¿Te lastimaste de paseo?</h2>
-          <div class="travel-intro">
-            <p class="lead">¿Te torciste el tobillo caminando o te lastimaste la espalda en el rafting? Revísalo antes de tu próximo tour.</p>
-            <a class="btn" href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20estoy%20de%20visita%20en%20La%20Fortuna%20y%20me%20lastim%C3%A9.%20%C2%BFMe%20puedes%20ayudar%3F" target="_blank" rel="noopener">Escribirle a Jocsan</a>
-          </div>
+    <!-- Q1: services as a ruled list -->
+    <section class="qa" id="que-atiende" aria-labelledby="q1">
+      <div class="container qa-grid">
+        <div class="qa-q">
+          <h2 id="q1">¿Qué atiende Jocsan?</h2>
+          <p>Dolor, lesiones y entrenamiento. Toca un servicio para escribirle directo.</p>
         </div>
-        <ul class="cases">
-          <li><h3>Esguinces de tobillo</h3><p>Senderos del volcán, cataratas y piedras mojadas.</p></li>
-          <li><h3>Espalda y cuello</h3><p>Rafting, viajes largos en carro o en avión.</p></li>
-          <li><h3>Dolor de rodilla</h3><p>Bajadas empinadas y gradas.</p></li>
-          <li><h3>Músculos cargados</h3><p>Después de canyoning, cabalgata o una caminata larga.</p></li>
+        <ul class="menu">
+          <li><a href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20quiero%20informaci%C3%B3n%20sobre%20rehabilitaci%C3%B3n%20de%20lesiones" target="_blank" rel="noopener"><span class="menu-name">Rehabilitación de lesiones</span><span class="menu-note">Esguinces, golpes y lesiones deportivas</span></a></li>
+          <li><a href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20quiero%20informaci%C3%B3n%20sobre%20manejo%20del%20dolor" target="_blank" rel="noopener"><span class="menu-name">Manejo del dolor</span><span class="menu-note">Espalda, cuello, rodillas y hombros</span></a></li>
+          <li><a href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20quiero%20informaci%C3%B3n%20sobre%20descargas%20musculares" target="_blank" rel="noopener"><span class="menu-name">Descargas musculares</span><span class="menu-note">Para músculos cargados por el trabajo o el deporte</span></a></li>
+          <li><a href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20quiero%20informaci%C3%B3n%20sobre%20entrenamiento%20para%20adulto%20mayor" target="_blank" rel="noopener"><span class="menu-name">Adulto mayor</span><span class="menu-note">Fuerza y equilibrio para moverte con confianza</span></a></li>
+          <li><a href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20quiero%20informaci%C3%B3n%20sobre%20entrenamiento%20personalizado" target="_blank" rel="noopener"><span class="menu-name">Entrenamiento personalizado</span><span class="menu-note">Peso, fuerza y masa muscular, con buena técnica</span></a></li>
         </ul>
-        <div class="travel-notes">
-          <p>Pregunta por una visita a tu hotel, y llévate ejercicios para el resto del viaje.</p>
-          <p class="travel-urgent">¿Emergencia? Llama al 911 o ve primero a la clínica más cercana.</p>
-        </div>
       </div>
     </section>
 
-    <section class="steps-band" id="primera-cita" aria-labelledby="cita-h">
+    <!-- Q2: where, three places as old-style figures -->
+    <section class="qa qa-tint" aria-labelledby="q2">
       <div class="container">
-        <h2 id="cita-h">Cómo es tu primera cita</h2>
+        <div class="qa-q qa-q-wide">
+          <h2 id="q2">¿Dónde me atiende?</h2>
+          <p>Donde te quede más cómodo, en La Fortuna de San Carlos y alrededores.</p>
+        </div>
+        <dl class="places">
+          <div><dt>En tu casa</dt><dd>Sin manejar ni esperar. Ideal si te cuesta moverte.</dd></div>
+          <div><dt>En tu gimnasio</dt><dd>Ejercicio guiado con el equipo que ya usas.</dd></div>
+          <div><dt>En línea</dt><dd>Asesorías por videollamada, desde donde estés.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Q3: first visit, numbered -->
+    <section class="qa" id="primera-cita" aria-labelledby="q3">
+      <div class="container">
+        <div class="qa-q qa-q-wide">
+          <h2 id="q3">¿Cómo es la primera cita?</h2>
+        </div>
         <ol class="steps">
           <li><h3>Me escribes</h3><p>Por WhatsApp o llamada, y me cuentas qué te pasa.</p></li>
-          <li><h3>Coordinamos</h3><p>Día, hora y lugar: tu casa, tu gimnasio o en línea.</p></li>
+          <li><h3>Coordinamos</h3><p>Día, hora y lugar, a tu ritmo.</p></li>
           <li><h3>Evaluamos</h3><p>Reviso cómo te mueves y armamos tu plan de ejercicio.</p></li>
         </ol>
       </div>
     </section>
 
-    <!-- Patient questions: an index of his five posts -->
-    <section class="questions" id="preguntas" aria-labelledby="preguntas-h">
-      <div class="container q-grid">
-        <div class="q-head">
-          <h2 id="preguntas-h">Preguntas de pacientes</h2>
-          <p class="lead">Cinco dudas comunes que explico en mi Instagram.</p>
+    <!-- Q5: his Instagram questions as disclosures -->
+    <section class="qa" id="dudas" aria-labelledby="q5">
+      <div class="container qa-grid">
+        <div class="qa-q">
+          <h2 id="q5">¿Qué dudas le escriben más?</h2>
+          <p>Cinco que explica en su Instagram, @jocsanfisio.</p>
         </div>
-        <div class="ruled q-list">
+        <div class="faq">
           <details open>
-            <summary><span class="q">¿Me truena la rodilla al agacharme, es malo?</span><span class="verdict">Depende</span></summary>
-            <dl class="q-body">
-              <div><dt>Lo que sabemos hoy</dt><dd>Cerca de 4 de cada 10 personas tienen ruidos en la rodilla y muchas no tienen dolor. Si suena sin dolor, no dejes el ejercicio.</dd></div>
-              <div><dt>Escríbeme si</dt><dd>El ruido viene con dolor, hinchazón o sientes que la rodilla “se traba”.</dd></div>
-            </dl>
+            <summary><h3>¿Me truena la rodilla al agacharme, es malo?</h3><span class="verdict">Depende</span></summary>
+            <div class="answer"><p>Cerca de 4 de cada 10 personas tienen ruidos en la rodilla y muchas no tienen dolor. Si suena sin dolor, no dejes el ejercicio. Escríbele si viene con dolor, hinchazón o se “traba”.</p></div>
           </details>
           <details>
-            <summary><span class="q">Me torcí el tobillo: ¿hielo y no apoyarlo?</span><span class="verdict">Ya no se usa</span></summary>
-            <dl class="q-body">
-              <div><dt>Lo que sabemos hoy</dt><dd>Quedarse quieto no es lo que más ayuda. Con ejercicios de rehabilitación, el riesgo de volver a torcerlo baja cerca de un 40 %.</dd></div>
-              <div><dt>Escríbeme si</dt><dd>Te tuerces el tobillo seguido o sientes que “se te va”.</dd></div>
-            </dl>
+            <summary><h3>Me torcí el tobillo: ¿hielo y no apoyarlo?</h3><span class="verdict">Ya no se usa</span></summary>
+            <div class="answer"><p>Quedarse quieto no es lo que más ayuda. Con ejercicios de rehabilitación, el riesgo de volver a torcerlo baja cerca de un 40 %.</p></div>
           </details>
           <details>
-            <summary><span class="q">¿Es normal que se escape la orina al toser o saltar?</span><span class="verdict">No es normal</span></summary>
-            <dl class="q-body">
-              <div><dt>Lo que sabemos hoy</dt><dd>Es muy común después del parto y en la menopausia, pero se puede mejorar. El primer tratamiento es ejercicio, no una operación.</dd></div>
-              <div><dt>Escríbeme si</dt><dd>Usas protector “por si acaso” o dejaste de hacer ejercicio por miedo.</dd></div>
-            </dl>
+            <summary><h3>¿Es normal que se escape la orina al toser o saltar?</h3><span class="verdict">No es normal</span></summary>
+            <div class="answer"><p>Es muy común después del parto y en la menopausia, pero se puede mejorar. El primer tratamiento es ejercicio, no una operación.</p></div>
           </details>
           <details>
-            <summary><span class="q">¿Cuántas veces me levanto de una silla en 30 segundos?</span><span class="verdict">Prueba en casa</span></summary>
-            <dl class="q-body">
-              <div><dt>Lo que sabemos hoy</dt><dd>Es la misma fuerza que usas para salir del carro o subir gradas, y se recupera a cualquier edad. Hazla con una silla firme contra la pared y alguien al lado.</dd></div>
-              <div><dt>Escríbeme si</dt><dd>No lograste levantarte sin usar las manos o alguien en tu familia se cayó este año.</dd></div>
-            </dl>
+            <summary><h3>¿Cuántas veces me levanto de una silla en 30 segundos?</h3><span class="verdict">Prueba en casa</span></summary>
+            <div class="answer"><p>Es la misma fuerza que usas para salir del carro o subir gradas, y se recupera a cualquier edad. Hazla con una silla firme contra la pared y alguien al lado.</p></div>
           </details>
           <details>
-            <summary><span class="q">Me duele la espalda: ¿me quedo en cama?</span><span class="verdict">Mito</span></summary>
-            <dl class="q-body">
-              <div><dt>Lo que sabemos hoy</dt><dd>Días acostado ponen la espalda más rígida y la debilitan. Caminar un rato varias veces al día y seguir tu rutina ayuda más.</dd></div>
-              <div><dt>Escríbeme si</dt><dd>El dolor ya te complica trabajar o dormir. Si no controlas la orina o tienes fiebre, ve al médico de inmediato.</dd></div>
-            </dl>
+            <summary><h3>Me duele la espalda: ¿me quedo en cama?</h3><span class="verdict">Mito</span></summary>
+            <div class="answer"><p>Días acostado ponen la espalda más rígida. Caminar un rato varias veces al día ayuda más. Si no controlas la orina o tienes fiebre, ve al médico de inmediato.</p></div>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- About: ink band -->
-    <section class="about" id="sobre" aria-labelledby="sobre-h">
+    <!-- Q6: who -->
+    <section class="qa qa-ink" id="sobre" aria-labelledby="q6">
       <canvas class="warp" data-seed="0" aria-hidden="true"></canvas>
-      <div class="container about-grid">
-        <div class="about-who">
-          <h2 id="sobre-h">Jocsan Cruz Villalobos</h2>
-          <p class="lead">Fisioterapeuta en La Fortuna de San Carlos. Trabajo con ejercicio y un plan para cada persona.</p>
-          <dl class="about-facts">
+      <div class="container qa-grid">
+        <div class="qa-q">
+          <h2 id="q6">¿Quién es Jocsan?</h2>
+          <p>Jocsan Cruz Villalobos, fisioterapeuta en La Fortuna de San Carlos. Atiende en español e inglés.</p>
+          <dl class="facts">
             <div><dt>Formación</dt><dd><span class="fill" data-fill="credentials">Universidad y código del Colegio de Terapeutas por confirmar</span></dd></div>
             <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/jocsanfisio/" target="_blank" rel="noopener">@jocsanfisio</a></dd></div>
           </dl>
         </div>
-        <blockquote class="about-quote">
-          <p>“La mejor y más eficiente farmacia está dentro de tu propio cuerpo.”</p>
-        </blockquote>
+        <blockquote class="quote"><p>“La mejor y más eficiente farmacia está dentro de tu propio cuerpo.”</p></blockquote>
       </div>
     </section>
 
-    <!-- Close: hours, place and booking again -->
-    <section class="contact" id="contacto" aria-labelledby="contacto-h">
-      <div class="container contact-grid">
-        <div class="contact-card">
-          <h2 id="contacto-h">Agenda tu cita</h2>
-          <a class="phone" href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al 8628-6856">8628-6856</a>
-          <dl class="contact-facts">
+    <!-- Q7: close, hours, place and the booking beside the map -->
+    <section class="qa" id="agendar" aria-labelledby="q7">
+      <div class="container qa-grid">
+        <div class="qa-q">
+          <h2 id="q7">¿Cómo agendo?</h2>
+          <a class="phone" href="tel:+50686286856">8628-6856</a>
+          <dl class="facts facts-light">
             <div><dt>Horario</dt><dd><span class="fill" data-fill="hours">Horario por confirmar</span></dd></div>
             <div><dt>Dónde</dt><dd>La Fortuna de San Carlos, Alajuela</dd></div>
-            <div><dt>Cómo</dt><dd>A domicilio, en tu gimnasio o en línea</dd></div>
             <div><dt>Idiomas</dt><dd>Español e inglés</dd></div>
           </dl>
-          <div class="contact-actions">
-            <a class="btn" href="tel:+50686286856">Llamar</a>
-            <a class="btn" href="#booker">Elegir servicio</a>
-          </div>
+          <a class="btn btn-outline" href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">Escribir por WhatsApp</a>
         </div>
         <figure class="map">
           <iframe title="Mapa de La Fortuna de San Carlos" src="https://www.google.com/maps?q=La+Fortuna,+San+Carlos,+Alajuela,+Costa+Rica&amp;z=13&amp;output=embed" width="640" height="480" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <figcaption>La Fortuna de San Carlos. <a href="https://maps.google.com/?q=La+Fortuna,+San+Carlos,+Costa+Rica" target="_blank" rel="noopener">Abrir en Google Maps</a></figcaption>
         </figure>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a class="wordmark" href="#" aria-label="JocsanFisio, volver al inicio">JocsanFisio</a>
-        <p>Fisioterapia y rehabilitación en La Fortuna de San Carlos.</p>
-      </div>
-      <div>
-        <h2 class="footer-h">En esta página</h2>
-        <ul>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#turistas">De paseo</a></li>
-          <li><a href="#primera-cita">Primera cita</a></li>
-          <li><a href="#preguntas">Preguntas</a></li>
-          <li><a href="#sobre">Sobre Jocsan</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2 class="footer-h">Contacto</h2>
-        <ul>
-          <li><a href="https://wa.me/50686286856" target="_blank" rel="noopener">WhatsApp</a></li>
-          <li><a href="tel:+50686286856">Llamar</a></li>
-          <li><a href="https://www.instagram.com/jocsanfisio/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="en/" hreflang="en" lang="en">English version</a></li>
-        </ul>
-      </div>
-      <p class="footer-legal">Jocsan Cruz Villalobos, fisioterapeuta. Sitio de demostración.</p>
+  <footer class="colophon">
+    <div class="container">
+      <p><strong>JocsanFisio.</strong> Jocsan Cruz Villalobos, fisioterapeuta. La Fortuna de San Carlos, Costa Rica. WhatsApp y llamadas al <a href="tel:+50686286856">8628-6856</a>, Instagram <a href="https://www.instagram.com/jocsanfisio/" target="_blank" rel="noopener">@jocsanfisio</a>. <a href="en/" hreflang="en" lang="en">English version</a>. Sitio de demostración.</p>
     </div>
   </footer>
 
-  <script src="warp.js" defer></script>
+  <!-- Phones: contact always one tap away -->
+  <div class="dock" aria-label="Contacto rápido">
+    <a class="btn btn-primary" href="https://wa.me/50686286856?text=Hola%20Jocsan%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn btn-ghost-dark" href="tel:+50686286856">Llamar</a>
+  </div>
+
   <script>
-    // Booking: builds the WhatsApp message from the two choices. Nothing is sent from this page.
-    const form = document.getElementById("booker");
-    const link = document.getElementById("booker-link");
-    function compose() {
-      const need = form.querySelector('input[name="need"]:checked')?.value;
-      const where = form.querySelector('input[name="where"]:checked')?.value;
-      const text = `Hola Jocsan, quiero agendar una cita para ${need}, ${where}.`;
-      link.href = "https://wa.me/50686286856?text=" + encodeURIComponent(text);
-    }
-    form.addEventListener("change", compose);
-    compose();
+    // Phones: the contact dock slides in once the hero (which has its own buttons) is off screen.
+    const dock = document.querySelector(".dock");
+    new IntersectionObserver(([e]) => dock.classList.toggle("is-on", !e.isIntersecting), { rootMargin: "-80px 0px 0px 0px" }).observe(document.querySelector(".hero .actions"));
   </script>
+  <script src="warp.js" defer></script>
 </body>
 </html>
