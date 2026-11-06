@@ -29,6 +29,7 @@
 
   <main>
     <section class="hero">
+      <canvas class="topo" data-seed="2" aria-hidden="true"></canvas>
       <div class="container hero-grid">
         <div class="hero-copy">
           <h1>Physiotherapy and rehab in La Fortuna</h1>
@@ -93,6 +94,7 @@
     </section>
 
     <section class="travel" id="travelers" aria-labelledby="travel-h">
+      <canvas class="topo" data-seed="5" data-peak="0.88,0.25" data-peak-height="1.3" aria-hidden="true"></canvas>
       <div class="container">
         <div class="head-split">
           <h2 id="travel-h">Hurt on a tour?</h2>
@@ -243,6 +245,7 @@
   </footer>
 
   <script src="../warp.js" defer></script>
+  <script src="../topo.js" defer></script>
   <script>
     // Booking: builds the WhatsApp message from the two choices. Nothing is sent from this page.
     const form = document.getElementById("booker");

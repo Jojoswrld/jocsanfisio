@@ -3,7 +3,7 @@ import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs"
 const out = "dist";
 rmSync(out, { recursive: true, force: true });
 mkdirSync(`${out}/en`, { recursive: true });
-for (const f of ["index.html", "styles.css", "tokens.css", "base.css", "warp.js"]) cpSync(f, `${out}/${f}`);
+for (const f of ["index.html", "styles.css", "tokens.css", "base.css", "warp.js", "topo.js"]) cpSync(f, `${out}/${f}`);
 cpSync("en/index.html", `${out}/en/index.html`);
 for (const f of ["index.html", "en/index.html"]) {
   const p = `${out}/${f}`;
