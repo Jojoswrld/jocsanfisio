@@ -8,7 +8,7 @@ Demo website for Jocsan Cruz Villalobos, physiotherapist in La Fortuna de San Ca
 - `RESEARCH.md`: market research and feature plan
 - `archive/v1-OLD/`, `archive/v2-OLD/`: earlier versions, kept for reference
 
-Live demo (noindex): https://jocsanfisio.karabi-bots.workers.dev (Spanish) and /en/ (English). Deploy updates with `npm run deploy`. The old https://jocsanfisio-v3.karabi-bots.workers.dev link serves the same site (`npm run deploy:v3`) so earlier shared links keep working.
+Live demo (noindex): https://jocsanfisio.arenalweb.workers.dev (Spanish) and /en/ (English). Deploy updates with `npm run deploy`.
 
 Plain HTML and CSS. To preview locally, serve the folder with any static server, for example:
 
