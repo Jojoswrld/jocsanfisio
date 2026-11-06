@@ -26,9 +26,7 @@
   <main>
     <!-- Hero: Poster, the hands photograph full-bleed, the first question low on the left -->
     <section class="hero" aria-labelledby="hero-h">
-      <div class="hero-photo" data-slot="hero" data-alt="Una mano mayor sostenida por una mano joven">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Holding_my_grandmother%27s_hand_when_she_was_87_and_I_was_27.jpg/1920px-Holding_my_grandmother%27s_hand_when_she_was_87_and_I_was_27.jpg" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Holding_my_grandmother%27s_hand_when_she_was_87_and_I_was_27.jpg/960px-Holding_my_grandmother%27s_hand_when_she_was_87_and_I_was_27.jpg 960w, https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Holding_my_grandmother%27s_hand_when_she_was_87_and_I_was_27.jpg/1280px-Holding_my_grandmother%27s_hand_when_she_was_87_and_I_was_27.jpg 1280w, https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Holding_my_grandmother%27s_hand_when_she_was_87_and_I_was_27.jpg/1920px-Holding_my_grandmother%27s_hand_when_she_was_87_and_I_was_27.jpg 1920w" sizes="100vw" width="6016" height="4000" alt="Una mano mayor sostenida por una mano joven">
-      </div>
+      <canvas class="warp" data-seed="2" aria-hidden="true"></canvas>
       <div class="container hero-body">
         <h1 id="hero-h">¿Buscas fisioterapia en La Fortuna?</h1>
         <p class="lead">Jocsan Cruz Villalobos te atiende en casa, gimnasio o en línea.</p>
@@ -37,6 +35,7 @@
           <a class="btn btn-ghost" href="tel:+50686286856">Llamar al 8628-6856</a>
         </div>
       </div>
+      <button class="warp-toggle" type="button" aria-pressed="false" data-pause="Pausar fondo" data-play="Reanudar fondo" hidden>Pausar fondo</button>
     </section>
 
     <!-- Q1: services as a ruled list -->
@@ -87,9 +86,6 @@
 
     <!-- Q4: travelers, full-bleed photograph then the answer -->
     <section class="travel" id="de-paseo" aria-labelledby="q4">
-      <figure class="travel-photo" data-slot="travel" data-alt="Catarata en un bosque lluvioso">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Beech_Forest_%28AU%29%2C_Great_Otway_National_Park%2C_Beauchamp_Falls_--_2019_--_1271.jpg/1920px-Beech_Forest_%28AU%29%2C_Great_Otway_National_Park%2C_Beauchamp_Falls_--_2019_--_1271.jpg" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Beech_Forest_%28AU%29%2C_Great_Otway_National_Park%2C_Beauchamp_Falls_--_2019_--_1271.jpg/960px-Beech_Forest_%28AU%29%2C_Great_Otway_National_Park%2C_Beauchamp_Falls_--_2019_--_1271.jpg 960w, https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Beech_Forest_%28AU%29%2C_Great_Otway_National_Park%2C_Beauchamp_Falls_--_2019_--_1271.jpg/1280px-Beech_Forest_%28AU%29%2C_Great_Otway_National_Park%2C_Beauchamp_Falls_--_2019_--_1271.jpg 1280w, https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Beech_Forest_%28AU%29%2C_Great_Otway_National_Park%2C_Beauchamp_Falls_--_2019_--_1271.jpg/1920px-Beech_Forest_%28AU%29%2C_Great_Otway_National_Park%2C_Beauchamp_Falls_--_2019_--_1271.jpg 1920w" sizes="100vw" width="6508" height="4339" alt="Catarata en un bosque lluvioso" loading="lazy">
-      </figure>
       <div class="container qa-grid">
         <div class="qa-q">
           <h2 id="q4">¿Y si me lastimé de paseo?</h2>
@@ -139,6 +135,7 @@
 
     <!-- Q6: who -->
     <section class="qa qa-ink" id="sobre" aria-labelledby="q6">
+      <canvas class="warp" data-seed="0" aria-hidden="true"></canvas>
       <div class="container qa-grid">
         <div class="qa-q">
           <h2 id="q6">¿Quién es Jocsan?</h2>
@@ -149,6 +146,7 @@
           </dl>
         </div>
         <blockquote class="quote"><p>“La mejor y más eficiente farmacia está dentro de tu propio cuerpo.”</p></blockquote>
+        <button class="warp-toggle" type="button" aria-pressed="false" data-pause="Pausar fondo" data-play="Reanudar fondo" hidden>Pausar fondo</button>
       </div>
     </section>
 
@@ -175,7 +173,6 @@
   <footer class="colophon">
     <div class="container">
       <p><strong>JocsanFisio.</strong> Jocsan Cruz Villalobos, fisioterapeuta. La Fortuna de San Carlos, Costa Rica. WhatsApp y llamadas al <a href="tel:+50686286856">8628-6856</a>, Instagram <a href="https://www.instagram.com/jocsanfisio/" target="_blank" rel="noopener">@jocsanfisio</a>. Sitio de demostración.</p>
-      <p class="credits">Fotografías de muestra: <a href="https://commons.wikimedia.org/wiki/File:Holding_my_grandmother%27s_hand_when_she_was_87_and_I_was_27.jpg">Levi Clancy</a> (CC BY-SA 4.0), <a href="https://commons.wikimedia.org/wiki/File:Beech_Forest_(AU),_Great_Otway_National_Park,_Beauchamp_Falls_--_2019_--_1271.jpg">Dietmar Rabich</a> (CC BY-SA 4.0), Wikimedia Commons.</p>
     </div>
   </footer>
 
@@ -190,7 +187,6 @@
     const dock = document.querySelector(".dock");
     new IntersectionObserver(([e]) => dock.classList.toggle("is-on", !e.isIntersecting), { rootMargin: "-80px 0px 0px 0px" }).observe(document.querySelector(".hero .actions"));
   </script>
-  <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
-  document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+  <script src="warp.js" defer></script>
 </body>
 </html>

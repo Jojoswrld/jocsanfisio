@@ -14,6 +14,7 @@
   --color-ink: oklch(23.5% 0.073 270); --color-ink-2: oklch(33% 0.055 268); --color-muted: oklch(45% 0.035 262);
   --color-rule: oklch(84% 0.022 88); --color-rule-2: oklch(66% 0.035 262);
   --color-accent: oklch(52% 0.165 40); --color-accent-hover: oklch(47% 0.15 40); --color-accent-2: oklch(84% 0.06 245); --color-accent-ink: oklch(97% 0.015 95);
+  --color-warp-1: oklch(31% 0.085 268); --color-warp-2: oklch(52% 0.09 245);
   --color-on-ink: oklch(96.5% 0.014 92); --color-on-ink-2: oklch(84% 0.025 255);
   --color-focus: oklch(56% 0.18 40); --tint-navy: oklch(23.5% 0.073 270 / 0.06); --tint-clay: oklch(56% 0.165 40 / 0.09); --scrim: oklch(18% 0.06 270 / 0.62);
   --font-display: "Vollkorn", ui-serif, Georgia, serif; --font-body: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
