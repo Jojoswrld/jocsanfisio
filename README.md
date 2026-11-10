@@ -1,19 +1,31 @@
 # JocsanFisio
 
-Demo website for Jocsan Cruz Villalobos, physiotherapist in La Fortuna de San Carlos, Costa Rica (Instagram @jocsanfisio).
+Demo website for Jocsan Cruz Villalobos, a physiotherapist in La Fortuna de San Carlos, Costa Rica (Instagram [@jocsanfisio](https://www.instagram.com/jocsanfisio/)).
 
-- `index.html`: Spanish page, aimed at locals (home, gym, online)
-- `en/index.html`: English page, aimed at tourists (hotel and Airbnb visits)
-- `styles.css`, `tokens.css`, `base.css`, `warp.js`: shared styles and the navy background effect (Hallmark Garden theme, recoloured navy and orange)
-- `RESEARCH.md`: market research and feature plan
-- `archive/v1-OLD/`, `archive/v2-OLD/`: earlier versions, kept for reference
+Spanish page for locals, English page for tourists. Plain HTML and CSS, published as a Cloudflare Worker that serves static files. The live site is marked `noindex`.
 
-Live demo (noindex): https://jocsanfisio.arenalweb.workers.dev (Spanish) and /en/ (English). Deploy updates with `npm run deploy`.
+**Live:** https://jocsanfisio.arenalweb.workers.dev  
+**English:** https://jocsanfisio.arenalweb.workers.dev/en/
 
-Plain HTML and CSS. To preview locally, serve the folder with any static server, for example:
+## Pages and files
+
+- `index.html` — Spanish (locals): home, gym, and online
+- `en/index.html` — English (tourists): hotel and Airbnb visits
+- `styles.css`, `tokens.css`, `base.css` — shared styles
+- `warp.js` — navy background effect (Hallmark Garden theme, recoloured navy and orange)
+- `RESEARCH.md` — market research and feature plan
+- `archive/v1-OLD/`, `archive/v2-OLD/` — earlier versions, kept for reference
+
+## Preview locally
+
+There is no local dev script. Serve this folder with any static server, for example:
 
 ```bash
 npx http-server -p 5178 -c-1
 ```
 
-Still to fill in from Jocsan: hours, university and license code, a photo, and whether he does hotel visits.
+## Deploy
+
+`npm run deploy` builds `dist/` (`node scripts/build.mjs`) and publishes it (`npx wrangler deploy`). The Worker settings are in `wrangler.jsonc` (`assets.directory` is `./dist`).
+
+Still to fill in from Jocsan: hours, university and Colegio de Terapeutas license code, and a photo.
