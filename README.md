@@ -4,8 +4,8 @@ Demo website for Jocsan Cruz Villalobos, a physiotherapist in La Fortuna de San 
 
 Spanish page for locals, English page for tourists. Plain HTML and CSS, published as a Cloudflare Worker that serves static files. The live site is marked `noindex`.
 
-**Live:** https://jocsanfisio.arenalweb.workers.dev  
-**English:** https://jocsanfisio.arenalweb.workers.dev/en/
+**Live:** https://jocsanfisio.lavalogic.workers.dev  
+**English:** https://jocsanfisio.lavalogic.workers.dev/en/
 
 ## Pages and files
 
@@ -26,6 +26,8 @@ npx http-server -p 5178 -c-1
 
 ## Deploy
 
-`npm run deploy` builds `dist/` (`node scripts/build.mjs`) and publishes it (`npx wrangler deploy`). The Worker settings are in `wrangler.jsonc` (`assets.directory` is `./dist`).
+Pushing to `main` on GitHub deploys the site automatically: Cloudflare (personal account) runs `npm run build` and `npx wrangler deploy`.
+
+To deploy by hand instead, `npm run deploy` builds `dist/` (`node scripts/build.mjs`) and publishes it (`npx wrangler deploy`). The Worker settings are in `wrangler.jsonc` (`assets.directory` is `./dist`).
 
 Still to fill in from Jocsan: hours, university and Colegio de Terapeutas license code, and a photo.
